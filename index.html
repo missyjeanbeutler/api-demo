@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html lang="en" ng-app='app'>
-  <head>
-    <title></title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-  <body ng-controller='mainCtrl'>
-  
-    <button ng-repeat='num in numbers' ng-click='getData(num.id)'>{{num.name}}</button>
-    
-    <h2 ng-repeat='planet in planets'>{{planet}}</h2>
 
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body ng-controller='mainCtrl'>
+
+  <input ng-model='lookImHere'>
+  {{lookImHere}}
+
+  <br>
+  
+  <button ng-repeat='num in numbers' ng-click='getData(num.id)'>
+      {{num.name}}
+      </button>
+  <h2 ng-repeat='planet in planets'>{{planet}}</h2>
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
   <script src="app.js"></script>
   <script src="mainCtrl.js"></script>
   <script src="mainSvc.js"></script>
-  </body>
+</body>
+
 </html>

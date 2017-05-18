@@ -13,6 +13,7 @@ $scope.numbers = [
   {id: 3, name: 'THREE'}
 ]
 
+$scope.lookImHere
 
 
 })
